@@ -1,0 +1,8 @@
+D:\C Sharp\Day3tasks\obj\Debug\Day3tasks.csproj.AssemblyReference.cache
+D:\C Sharp\Day3tasks\obj\Debug\Day3tasks.csproj.SuggestedBindingRedirects.cache
+D:\C Sharp\Day3tasks\obj\Debug\Day3tasks.csproj.CoreCompileInputs.cache
+D:\C Sharp\Day3tasks\bin\Debug\Day3tasks.exe.config
+D:\C Sharp\Day3tasks\bin\Debug\Day3tasks.exe
+D:\C Sharp\Day3tasks\bin\Debug\Day3tasks.pdb
+D:\C Sharp\Day3tasks\obj\Debug\Day3tasks.exe
+D:\C Sharp\Day3tasks\obj\Debug\Day3tasks.pdb

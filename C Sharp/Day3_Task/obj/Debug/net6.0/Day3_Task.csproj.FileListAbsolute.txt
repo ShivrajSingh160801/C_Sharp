@@ -1,0 +1,15 @@
+D:\C Sharp\Day3_Task\bin\Debug\net6.0\Day3_Task.exe
+D:\C Sharp\Day3_Task\bin\Debug\net6.0\Day3_Task.deps.json
+D:\C Sharp\Day3_Task\bin\Debug\net6.0\Day3_Task.runtimeconfig.json
+D:\C Sharp\Day3_Task\bin\Debug\net6.0\Day3_Task.dll
+D:\C Sharp\Day3_Task\bin\Debug\net6.0\Day3_Task.pdb
+D:\C Sharp\Day3_Task\obj\Debug\net6.0\Day3_Task.csproj.AssemblyReference.cache
+D:\C Sharp\Day3_Task\obj\Debug\net6.0\Day3_Task.GeneratedMSBuildEditorConfig.editorconfig
+D:\C Sharp\Day3_Task\obj\Debug\net6.0\Day3_Task.AssemblyInfoInputs.cache
+D:\C Sharp\Day3_Task\obj\Debug\net6.0\Day3_Task.AssemblyInfo.cs
+D:\C Sharp\Day3_Task\obj\Debug\net6.0\Day3_Task.csproj.CoreCompileInputs.cache
+D:\C Sharp\Day3_Task\obj\Debug\net6.0\Day3_Task.dll
+D:\C Sharp\Day3_Task\obj\Debug\net6.0\refint\Day3_Task.dll
+D:\C Sharp\Day3_Task\obj\Debug\net6.0\Day3_Task.pdb
+D:\C Sharp\Day3_Task\obj\Debug\net6.0\Day3_Task.genruntimeconfig.cache
+D:\C Sharp\Day3_Task\obj\Debug\net6.0\ref\Day3_Task.dll

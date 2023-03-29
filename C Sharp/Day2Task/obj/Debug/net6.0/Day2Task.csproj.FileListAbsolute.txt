@@ -1,0 +1,15 @@
+D:\C Sharp\Day2Task\bin\Debug\net6.0\Day2Task.exe
+D:\C Sharp\Day2Task\bin\Debug\net6.0\Day2Task.deps.json
+D:\C Sharp\Day2Task\bin\Debug\net6.0\Day2Task.runtimeconfig.json
+D:\C Sharp\Day2Task\bin\Debug\net6.0\Day2Task.dll
+D:\C Sharp\Day2Task\bin\Debug\net6.0\Day2Task.pdb
+D:\C Sharp\Day2Task\obj\Debug\net6.0\Day2Task.csproj.AssemblyReference.cache
+D:\C Sharp\Day2Task\obj\Debug\net6.0\Day2Task.GeneratedMSBuildEditorConfig.editorconfig
+D:\C Sharp\Day2Task\obj\Debug\net6.0\Day2Task.AssemblyInfoInputs.cache
+D:\C Sharp\Day2Task\obj\Debug\net6.0\Day2Task.AssemblyInfo.cs
+D:\C Sharp\Day2Task\obj\Debug\net6.0\Day2Task.csproj.CoreCompileInputs.cache
+D:\C Sharp\Day2Task\obj\Debug\net6.0\Day2Task.dll
+D:\C Sharp\Day2Task\obj\Debug\net6.0\refint\Day2Task.dll
+D:\C Sharp\Day2Task\obj\Debug\net6.0\Day2Task.pdb
+D:\C Sharp\Day2Task\obj\Debug\net6.0\Day2Task.genruntimeconfig.cache
+D:\C Sharp\Day2Task\obj\Debug\net6.0\ref\Day2Task.dll
