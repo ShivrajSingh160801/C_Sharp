@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C Sharp\\Day2Task\\Day2Task.csproj",
+      "projectUniqueName": "D:\\C_Sharp_GIt\\C Sharp\\Day2Task\\Day2Task.csproj",
       "projectName": "Day2Task",
-      "projectPath": "D:\\C Sharp\\Day2Task\\Day2Task.csproj",
+      "projectPath": "D:\\C_Sharp_GIt\\C Sharp\\Day2Task\\Day2Task.csproj",
       "packagesPath": "C:\\Users\\shivr\\.nuget\\packages\\",
-      "outputPath": "D:\\C Sharp\\Day2Task\\obj\\",
+      "outputPath": "D:\\C_Sharp_GIt\\C Sharp\\Day2Task\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\shivr\\AppData\\Roaming\\NuGet\\NuGet.Config",

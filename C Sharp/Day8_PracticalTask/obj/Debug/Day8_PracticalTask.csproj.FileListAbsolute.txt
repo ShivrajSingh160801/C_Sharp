@@ -1,0 +1,11 @@
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\bin\Debug\Day8_PracticalTask.exe.config
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\bin\Debug\Day8_PracticalTask.exe
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\bin\Debug\Day8_PracticalTask.pdb
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\obj\Debug\Day8_PracticalTask.csproj.AssemblyReference.cache
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\obj\Debug\Day8_PracticalTask.csproj.SuggestedBindingRedirects.cache
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\obj\Debug\Day8_PracticalTask.csproj.CoreCompileInputs.cache
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\obj\Debug\Day8_PracticalTask.exe
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\obj\Debug\Day8_PracticalTask.pdb
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\bin\Debug\Newtonsoft.Json.dll
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\bin\Debug\Newtonsoft.Json.xml
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\obj\Debug\Day8_PracticalTask.csproj.CopyComplete

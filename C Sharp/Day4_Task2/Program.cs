@@ -105,10 +105,10 @@ namespace Day4_Task2
             do
             {
                 Console.WriteLine("Enter valid Email :");
-                inputmail = Convert.ToString(Console.ReadLine());
-                studentEmail = inputmail;
+                studentEmail = Convert.ToString(Console.ReadLine());
+               
             }
-            while (!IsValidEmail(inputmail));
+            while (!IsValidEmail(studentEmail));
        
 
             Console.WriteLine("Enter Student Roll.No.");
@@ -160,7 +160,7 @@ namespace Day4_Task2
 
             }
             studentCGPA = (decimal)Queryable.Average(GPAarray.AsQueryable());
-            Console.WriteLine(studentCGPA);
+            Console.WriteLine("The CGPA of " + studentName + "is : "+studentCGPA);
         }
 
         public Student_details(Student_details student3)

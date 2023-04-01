@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C Sharp\\Day3_Task\\Day3_Task.csproj": {}
+    "D:\\C_Sharp_GIt\\C Sharp\\Day3_Task\\Day3_Task.csproj": {}
   },
   "projects": {
-    "D:\\C Sharp\\Day3_Task\\Day3_Task.csproj": {
+    "D:\\C_Sharp_GIt\\C Sharp\\Day3_Task\\Day3_Task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C Sharp\\Day3_Task\\Day3_Task.csproj",
+        "projectUniqueName": "D:\\C_Sharp_GIt\\C Sharp\\Day3_Task\\Day3_Task.csproj",
         "projectName": "Day3_Task",
-        "projectPath": "D:\\C Sharp\\Day3_Task\\Day3_Task.csproj",
+        "projectPath": "D:\\C_Sharp_GIt\\C Sharp\\Day3_Task\\Day3_Task.csproj",
         "packagesPath": "C:\\Users\\shivr\\.nuget\\packages\\",
-        "outputPath": "D:\\C Sharp\\Day3_Task\\obj\\",
+        "outputPath": "D:\\C_Sharp_GIt\\C Sharp\\Day3_Task\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shivr\\AppData\\Roaming\\NuGet\\NuGet.Config",

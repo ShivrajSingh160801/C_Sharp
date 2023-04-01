@@ -1,0 +1,8 @@
+D:\C_Sharp_GIt\C Sharp\Day7_PracticalTask_2\bin\Debug\Day7_PracticalTask_2.exe.config
+D:\C_Sharp_GIt\C Sharp\Day7_PracticalTask_2\bin\Debug\Day7_PracticalTask_2.exe
+D:\C_Sharp_GIt\C Sharp\Day7_PracticalTask_2\bin\Debug\Day7_PracticalTask_2.pdb
+D:\C_Sharp_GIt\C Sharp\Day7_PracticalTask_2\obj\Debug\Day7_PracticalTask_2.csproj.AssemblyReference.cache
+D:\C_Sharp_GIt\C Sharp\Day7_PracticalTask_2\obj\Debug\Day7_PracticalTask_2.csproj.SuggestedBindingRedirects.cache
+D:\C_Sharp_GIt\C Sharp\Day7_PracticalTask_2\obj\Debug\Day7_PracticalTask_2.csproj.CoreCompileInputs.cache
+D:\C_Sharp_GIt\C Sharp\Day7_PracticalTask_2\obj\Debug\Day7_PracticalTask_2.exe
+D:\C_Sharp_GIt\C Sharp\Day7_PracticalTask_2\obj\Debug\Day7_PracticalTask_2.pdb

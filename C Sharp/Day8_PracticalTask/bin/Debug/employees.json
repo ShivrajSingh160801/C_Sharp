@@ -1,0 +1,37 @@
+[
+  {
+    "firstName": "aditya",
+    "lastName": "soni",
+    "Gender": "Male",
+    "phone": 0,
+    "designation": "Developer"
+  },
+  {
+    "firstName": "shivraj",
+    "lastName": "rathor",
+    "Gender": "Male",
+    "phone": 0,
+    "designation": "Developer"
+  },
+  {
+    "firstName": "rahul",
+    "lastName": "fdgdf",
+    "Gender": "Male",
+    "phone": 0,
+    "designation": "Developer"
+  },
+  {
+    "firstName": "Sakshi",
+    "lastName": "Chauhan",
+    "Gender": "Female",
+    "phone": 0,
+    "designation": "Trainee"
+  },
+  {
+    "firstName": "Yash",
+    "lastName": "Goenka",
+    "Gender": "Male",
+    "phone": 7896541236,
+    "designation": "Developer"
+  }
+]
