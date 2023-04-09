@@ -1,0 +1,8 @@
+D:\C_Sharp_GIt\C Sharp\oops_Day1_ROI\bin\Debug\oops_Day1_ROI.exe.config
+D:\C_Sharp_GIt\C Sharp\oops_Day1_ROI\bin\Debug\oops_Day1_ROI.exe
+D:\C_Sharp_GIt\C Sharp\oops_Day1_ROI\bin\Debug\oops_Day1_ROI.pdb
+D:\C_Sharp_GIt\C Sharp\oops_Day1_ROI\obj\Debug\oops_Day1_ROI.csproj.AssemblyReference.cache
+D:\C_Sharp_GIt\C Sharp\oops_Day1_ROI\obj\Debug\oops_Day1_ROI.csproj.SuggestedBindingRedirects.cache
+D:\C_Sharp_GIt\C Sharp\oops_Day1_ROI\obj\Debug\oops_Day1_ROI.csproj.CoreCompileInputs.cache
+D:\C_Sharp_GIt\C Sharp\oops_Day1_ROI\obj\Debug\oops_Day1_ROI.exe
+D:\C_Sharp_GIt\C Sharp\oops_Day1_ROI\obj\Debug\oops_Day1_ROI.pdb

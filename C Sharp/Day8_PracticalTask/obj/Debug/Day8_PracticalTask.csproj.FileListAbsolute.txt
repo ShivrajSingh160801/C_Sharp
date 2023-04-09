@@ -9,3 +9,5 @@ D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\obj\Debug\Day8_PracticalTask.pdb
 D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\bin\Debug\Newtonsoft.Json.dll
 D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\bin\Debug\Newtonsoft.Json.xml
 D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\obj\Debug\Day8_PracticalTask.csproj.CopyComplete
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\bin\Debug\AutoMapper.dll
+D:\C_Sharp_GIt\C Sharp\Day8_PracticalTask\bin\Debug\AutoMapper.xml

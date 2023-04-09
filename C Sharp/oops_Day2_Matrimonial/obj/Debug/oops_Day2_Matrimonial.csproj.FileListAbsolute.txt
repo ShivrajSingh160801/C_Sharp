@@ -1,0 +1,8 @@
+D:\C_Sharp_GIt\C Sharp\oops_Day2_Matrimonial\bin\Debug\oops_Day2_Matrimonial.exe.config
+D:\C_Sharp_GIt\C Sharp\oops_Day2_Matrimonial\bin\Debug\oops_Day2_Matrimonial.exe
+D:\C_Sharp_GIt\C Sharp\oops_Day2_Matrimonial\bin\Debug\oops_Day2_Matrimonial.pdb
+D:\C_Sharp_GIt\C Sharp\oops_Day2_Matrimonial\obj\Debug\oops_Day2_Matrimonial.csproj.AssemblyReference.cache
+D:\C_Sharp_GIt\C Sharp\oops_Day2_Matrimonial\obj\Debug\oops_Day2_Matrimonial.csproj.SuggestedBindingRedirects.cache
+D:\C_Sharp_GIt\C Sharp\oops_Day2_Matrimonial\obj\Debug\oops_Day2_Matrimonial.csproj.CoreCompileInputs.cache
+D:\C_Sharp_GIt\C Sharp\oops_Day2_Matrimonial\obj\Debug\oops_Day2_Matrimonial.exe
+D:\C_Sharp_GIt\C Sharp\oops_Day2_Matrimonial\obj\Debug\oops_Day2_Matrimonial.pdb

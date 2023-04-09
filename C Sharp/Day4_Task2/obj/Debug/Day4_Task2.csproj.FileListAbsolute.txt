@@ -14,3 +14,6 @@ D:\C_Sharp_GIt\C Sharp\Day4_Task2\obj\Debug\Day4_Task2.csproj.SuggestedBindingRe
 D:\C_Sharp_GIt\C Sharp\Day4_Task2\obj\Debug\Day4_Task2.csproj.CoreCompileInputs.cache
 D:\C_Sharp_GIt\C Sharp\Day4_Task2\obj\Debug\Day4_Task2.exe
 D:\C_Sharp_GIt\C Sharp\Day4_Task2\obj\Debug\Day4_Task2.pdb
+D:\C_Sharp_GIt\C Sharp\Day4_Task2\bin\Debug\AutoMapper.dll
+D:\C_Sharp_GIt\C Sharp\Day4_Task2\bin\Debug\AutoMapper.xml
+D:\C_Sharp_GIt\C Sharp\Day4_Task2\obj\Debug\Day4_Task2.csproj.CopyComplete

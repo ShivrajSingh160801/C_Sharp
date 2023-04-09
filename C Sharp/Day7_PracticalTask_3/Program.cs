@@ -82,11 +82,9 @@ namespace Day7_Practical3
                 Console.WriteLine("----------------");
             }
         }
-
         public static void Admission()
         {
             bool flag = false;
-
             do
             {
                 Console.WriteLine("Enter Student Details:");

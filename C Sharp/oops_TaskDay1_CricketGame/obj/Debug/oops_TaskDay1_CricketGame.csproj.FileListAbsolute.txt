@@ -1,0 +1,8 @@
+D:\C_Sharp_GIt\C Sharp\oops_TaskDay1_CricketGame\bin\Debug\oops_TaskDay1_CricketGame.exe.config
+D:\C_Sharp_GIt\C Sharp\oops_TaskDay1_CricketGame\bin\Debug\oops_TaskDay1_CricketGame.exe
+D:\C_Sharp_GIt\C Sharp\oops_TaskDay1_CricketGame\bin\Debug\oops_TaskDay1_CricketGame.pdb
+D:\C_Sharp_GIt\C Sharp\oops_TaskDay1_CricketGame\obj\Debug\oops_TaskDay1_CricketGame.csproj.AssemblyReference.cache
+D:\C_Sharp_GIt\C Sharp\oops_TaskDay1_CricketGame\obj\Debug\oops_TaskDay1_CricketGame.csproj.SuggestedBindingRedirects.cache
+D:\C_Sharp_GIt\C Sharp\oops_TaskDay1_CricketGame\obj\Debug\oops_TaskDay1_CricketGame.csproj.CoreCompileInputs.cache
+D:\C_Sharp_GIt\C Sharp\oops_TaskDay1_CricketGame\obj\Debug\oops_TaskDay1_CricketGame.exe
+D:\C_Sharp_GIt\C Sharp\oops_TaskDay1_CricketGame\obj\Debug\oops_TaskDay1_CricketGame.pdb

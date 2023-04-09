@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "HMfpSuDkga+ueN2QxvV9Tv/abJd4cJoiHvjwRC31qIFMEErD+/oyMvZ/qbM4BsaG5dQM/Oh0eGU+OT0b5Ob9fA==",
+  "dgSpecHash": "eCZkmhOoBFCkWrErF989xmxkvAJ4YNUlAvRRAtBdSo1IlFwWtV5DH2nJBp9T2m4MJIIcZ19K7EG5tPkGXkPGUA==",
   "success": true,
   "projectFilePath": "D:\\C_Sharp_GIt\\C Sharp\\Day3_Task\\Day3_Task.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\shivr\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\shivr\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\shivr\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
