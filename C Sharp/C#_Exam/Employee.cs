@@ -75,14 +75,14 @@ namespace C_sharp_Exam
             if (string.IsNullOrEmpty(email))
                 return false;
 
-            string pattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
+            string pattern = @"^[^\s@]+@[^\s@]+\.(com|org|edu|info|in)$";
 
             return Regex.IsMatch(email, pattern);
         }
 
         public string dateOfJoining { get; set; }
 
-        public double totalExperience { get; set; }
+        public string totalExperience { get; set; }
 
         public string remarks { get; set; }
 
@@ -94,17 +94,9 @@ namespace C_sharp_Exam
             Sales, Marketing, Developer, QA, HR, SEO
         }
 
-        public long salary { get; set; }
+        public double salary { get; set; }
 
-        private bool isValidsalary(string salary)
-        {
-            if (string.IsNullOrEmpty(salary))
-                return false;
 
-            string pattern = @"^(?!0+(?:\.0+)?$)[0-9]+(?:\.[0-9]+)?$";
-
-            return Regex.IsMatch(salary, pattern);
-        }
 
         public void employeeDetail()
         {
@@ -166,7 +158,7 @@ namespace C_sharp_Exam
                     try
                     {
                         dateOfBirth = DateTimeExtensions.DateFormate(Convert.ToDateTime(inputDOB));
-                        Console.WriteLine("Entered Date Of Birth - " + dateOfBirth);
+                        Console.WriteLine("Entered Date Of Birth : " + dateOfBirth);
                         birthDate = false;
                     }
                     catch (FormatException)
@@ -285,15 +277,18 @@ namespace C_sharp_Exam
                     {
                         DateTime getJoinDate = Convert.ToDateTime(dateOfJoin);
                         dateOfJoining = DateTimeExtensions.DateFormate(getJoinDate);
-                        Console.WriteLine("Your Date of Joining - " + dateOfJoining);
+                        Console.WriteLine("Your Date of Joining : " + dateOfJoining);
 
                         int totalMonths = (DateTime.Today.Year - getJoinDate.Year) * 12 + DateTime.Today.Month - getJoinDate.Month;
 
-                        totalExperience = totalMonths / 12;
+                        int years = totalMonths / 12;
 
                         int months = totalMonths % 12;
 
-                        Console.WriteLine("Total Experience : " + totalExperience + " years and " + months + " months");
+                       totalExperience = years + " Years , " + months + " months";
+
+
+                        Console.WriteLine("Total Experience : " + years + " years and " + months + " months");
                         joinDate = false;
                     }
                     catch (FormatException)
@@ -363,31 +358,38 @@ namespace C_sharp_Exam
                 while (!validDepartment);
 
                 Console.WriteLine("\n----------------");
+                
 
-                string testsalary;
                 do
                 {
-                    Console.WriteLine("Enter Your Salary :");
-                    testsalary = Console.ReadLine();
+                    Console.WriteLine("Enter Your Salary:");
+                    string testsalary = Console.ReadLine();
+
                     try
                     {
-                        salary = Convert.ToInt64(testsalary);
+                        salary = Convert.ToDouble(testsalary);
+
+                        if (salary < 5000 || salary > 100000)
+                        {
+                            Console.WriteLine("Salary must be between $5000 and $100000.");
+                            continue;
+                        }
                         Console.WriteLine("Your Salary is $" + salary);
+                        break; 
                     }
                     catch (FormatException)
                     {
-
                         Console.WriteLine("Invalid Salary Input.");
                         continue;
                     }
                 }
-                while (!isValidsalary(testsalary));
+                while (true);
 
                 Console.WriteLine("\n----------------");
 
                 var EmployeeObject = new Employee()
                 {
-                    employeeID =  ,
+                    employeeID = employeeID,
                     employeeName = employeeName,
                     dateOfBirth = dateOfBirth,
                     Gender = Gender,
@@ -455,6 +457,52 @@ namespace C_sharp_Exam
 
             return isExist;
         }
+
+        public void DeleteEmployee()
+        {
+            Console.Write("Enter the ID of the employee to be deleted: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            string filePath = ConfigurationManager.AppSettings["FilePath"];
+            List<Employee> employeesList = new List<Employee>();
+
+            try
+            {
+                if (File.Exists(filePath) && new FileInfo(filePath).Length > 0)
+                {
+                    string jsonString = File.ReadAllText(filePath);
+                    employeesList = JsonConvert.DeserializeObject<List<Employee>>(jsonString);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error reading file: {ex.Message}");
+            }
+
+            Employee employeeToDelete = employeesList.SingleOrDefault(x => x.employeeID == id);
+
+            if (employeeToDelete != null)
+            {
+                employeesList.Remove(employeeToDelete);
+
+                try
+                {
+                    string jsonConvert = JsonConvert.SerializeObject(employeesList);
+                    File.WriteAllText(filePath, jsonConvert);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error writing file: {ex.Message}");
+                }
+
+                Console.WriteLine($"Employee with ID {id} has been deleted.");
+            }
+            else
+            {
+                Console.WriteLine($"Employee with ID {id} was not found.");
+            }
+        }
+
 
     }
 

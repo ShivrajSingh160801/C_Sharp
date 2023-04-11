@@ -22,7 +22,7 @@ namespace C_sharp_Exam
                 Employee employee = new Employee();
                 while (flag)
                 {
-                    Console.WriteLine("Enter 1 to Add New Employee\nEnter 2 to Exit");
+                    Console.WriteLine("Enter 1 to Add New Employee\nEnter 2 to Delete Employee\nEnter 3 to Exit Program");
                     var num = Console.ReadLine();
 
                     switch (num)
@@ -32,6 +32,11 @@ namespace C_sharp_Exam
                             break;
 
                         case "2":
+                            employee.DeleteEmployee();
+                            break;
+
+
+                        case "3":
                             flag = false; 
                             Console.WriteLine("Exiting program...");
                             break;
