@@ -15,7 +15,8 @@ namespace C_sharp_Exam
 {
     public class Employee
     {
-        public int employeeID { get; set; }
+        
+        public string employeeID { get; set; }
 
         private bool isValidId(string id)
         {
@@ -82,6 +83,8 @@ namespace C_sharp_Exam
 
         public string dateOfJoining { get; set; }
 
+        DateTime compareDOB;
+
         public string totalExperience { get; set; }
 
         public string remarks { get; set; }
@@ -107,7 +110,7 @@ namespace C_sharp_Exam
 
                 try
                 {
-                    if (File.Exists(filePath))
+                    if (File.Exists(filePath) && new FileInfo(filePath).Length > 0)
                     {
                         string jsonString = File.ReadAllText(filePath);
                         EmployeesList = JsonConvert.DeserializeObject<List<Employee>>(jsonString);
@@ -121,23 +124,7 @@ namespace C_sharp_Exam
                 Console.WriteLine("Enter Employee Details");
                 Console.WriteLine("----------------");
 
-                string testEmployeeID;
-                do
-                {
-                    Console.WriteLine("Enter Id :");
-                    testEmployeeID = Console.ReadLine();
-                    try
-                    {
-                        employeeID = Convert.ToInt32(testEmployeeID);
-                    }
-                    catch (FormatException)
-                    {
-
-                        Console.WriteLine("Invalid ID. Enter 6 Digit Id.");
-                        continue;
-                    }
-                }
-                while (!isValidId(testEmployeeID.ToString()) || CheckEmployeeIDExistence(employeeID));
+                employeeID = Guid.NewGuid().ToString();
 
                 Console.WriteLine("\n----------------");
 
@@ -145,6 +132,12 @@ namespace C_sharp_Exam
                 {
                     Console.WriteLine("Enter Name Of Employee :");
                     employeeName = Console.ReadLine();
+                    if (!isValidname(employeeName))
+                    {
+                        Console.WriteLine("Invalid Name");
+                        continue;
+                    }
+                   
                 }
                 while (!isValidname(employeeName));
 
@@ -155,8 +148,15 @@ namespace C_sharp_Exam
                 {
                     Console.Write("Enter your DOB: ");
                     string inputDOB = Console.ReadLine();
+
                     try
                     {
+                        compareDOB = Convert.ToDateTime(inputDOB);
+                        if (compareDOB > DateTime.Now)
+                        {
+                            Console.WriteLine("Entered Date Of Birth cannot be greater than current date.");
+                            continue;
+                        }
                         dateOfBirth = DateTimeExtensions.DateFormate(Convert.ToDateTime(inputDOB));
                         Console.WriteLine("Entered Date Of Birth : " + dateOfBirth);
                         birthDate = false;
@@ -196,6 +196,11 @@ namespace C_sharp_Exam
                 {
                     Console.WriteLine("Enter Designation :");
                     designation = Console.ReadLine();
+                    if (!isValidname(designation))
+                    {
+                        Console.WriteLine("Enter Proper Designation");
+                        continue;
+                    }
                 }
                 while (!isValidname(designation));
 
@@ -203,19 +208,31 @@ namespace C_sharp_Exam
 
                 do
                 {
+                    Console.WriteLine("Enter State :");
+                    state = Console.ReadLine();
+                    if (!isValidname(state))
+                    {
+                        Console.WriteLine("Invalid Name");
+                        continue;
+                    }
+                }
+                while (!isValidname(state));
+
+                do
+                {
                     Console.WriteLine("Enter City :");
                     city = Console.ReadLine();
+                    if (!isValidname(city))
+                    {
+                        Console.WriteLine("Invalid Name");
+                        continue;
+                    }
                 }
                 while (!isValidname(city));
 
                 Console.WriteLine("\n----------------");
 
-                do
-                {
-                    Console.WriteLine("Enter State :");
-                    state = Console.ReadLine();
-                }
-                while (!isValidname(state));
+            
 
                 Console.WriteLine("\n----------------");
 
@@ -224,6 +241,11 @@ namespace C_sharp_Exam
                 {
                     Console.WriteLine("Enter Postal Code :");
                     testPostCode = Console.ReadLine();
+                    if (!isValidId(testPostCode))
+                    {
+                        Console.WriteLine("Invalid Postal Code. Postal Code consist 6 digit.");
+                        continue;
+                    }
                     try
                     {
                         postCode = Convert.ToInt32(testPostCode);
@@ -244,6 +266,11 @@ namespace C_sharp_Exam
                 {
                     Console.WriteLine("Enter valid Phone Number :");
                     stringphoneNumber = Console.ReadLine();
+                    if (!isValidPhoneNumber(stringphoneNumber))
+                    {
+                        Console.WriteLine("Invalid phone number");
+                        continue;
+                    }
                     try
                     {
                         phoneNumber = Convert.ToInt64(stringphoneNumber);
@@ -276,7 +303,23 @@ namespace C_sharp_Exam
                     try
                     {
                         DateTime getJoinDate = Convert.ToDateTime(dateOfJoin);
+
+                        if (getJoinDate > DateTime.Today)
+                        {
+                            Console.WriteLine("Date of Joining cannot be after today's date.");
+                            continue;
+                        }
+
                         dateOfJoining = DateTimeExtensions.DateFormate(getJoinDate);
+
+                        TimeSpan age = getJoinDate - compareDOB;
+
+                        if (age.TotalDays < 18 * 365.25)
+                        {
+                            Console.WriteLine("You must be at least 18 years.");
+                            continue;
+                        }
+
                         Console.WriteLine("Your Date of Joining : " + dateOfJoining);
 
                         int totalMonths = (DateTime.Today.Year - getJoinDate.Year) * 12 + DateTime.Today.Month - getJoinDate.Month;
@@ -285,8 +328,7 @@ namespace C_sharp_Exam
 
                         int months = totalMonths % 12;
 
-                       totalExperience = years + " Years , " + months + " months";
-
+                        totalExperience = years + " Years , " + months + " months";
 
                         Console.WriteLine("Total Experience : " + years + " years and " + months + " months");
                         joinDate = false;
@@ -309,53 +351,58 @@ namespace C_sharp_Exam
 
                 Console.WriteLine("\n----------------");
 
-                string selectedDepartment;
+                int selectedDepartment;
                 bool validDepartment = false;
 
                 do
                 {
                     Console.WriteLine("Choose Department - \nPress 1 for Sales\nPress 2 for Marketing\nPress 3 for QA\nPress 4 for Developer\nPress 5 for HR\nPress 6 for SEO");
-                    selectedDepartment = Console.ReadLine();
-
-                    switch (selectedDepartment)
+                    if (int.TryParse(Console.ReadLine(), out selectedDepartment))
                     {
-                        case "1":
-                            department = selectDepartment.Sales.ToString();
-                            Console.WriteLine("Selected option - " + department);
-                            validDepartment = true;
-                            break;
-                        case "2":
-                            department = selectDepartment.Marketing.ToString();
-                            Console.WriteLine("Selected option - " + department);
-                            validDepartment = true;
-                            break;
-                        case "3":
-                            department = selectDepartment.QA.ToString();
-                            Console.WriteLine("Selected option - " + department);
-                            validDepartment = true;
-                            break;
-                        case "4":
-                            department = selectDepartment.Developer.ToString();
-                            Console.WriteLine("Selected option - " + department);
-                            validDepartment = true;
-                            break;
-                        case "5":
-                            department = selectDepartment.HR.ToString();
-                            Console.WriteLine("Selected option - " + department);
-                            validDepartment = true;
-                            break;
-                        case "6":
-                            department = selectDepartment.SEO.ToString();
-                            Console.WriteLine("Selected option - " + department);
-                            validDepartment = true;
-                            break;
-                        default:
-                            Console.WriteLine("Invalid input. Please choose between 1 - 6");
-                            break;
+                        switch (selectedDepartment)
+                        {
+                            case 1:
+                                department = selectDepartment.Sales.ToString();
+                                Console.WriteLine("Selected option - " + department);
+                                validDepartment = true;
+                                break;
+                            case 2:
+                                department = selectDepartment.Marketing.ToString();
+                                Console.WriteLine("Selected option - " + department);
+                                validDepartment = true;
+                                break;
+                            case 3:
+                                department = selectDepartment.QA.ToString();
+                                Console.WriteLine("Selected option - " + department);
+                                validDepartment = true;
+                                break;
+                            case 4:
+                                department = selectDepartment.Developer.ToString();
+                                Console.WriteLine("Selected option - " + department);
+                                validDepartment = true;
+                                break;
+                            case 5:
+                                department = selectDepartment.HR.ToString();
+                                Console.WriteLine("Selected option - " + department);
+                                validDepartment = true;
+                                break;
+                            case 6:
+                                department = selectDepartment.SEO.ToString();
+                                Console.WriteLine("Selected option - " + department);
+                                validDepartment = true;
+                                break;
+                            default:
+                                Console.WriteLine("Invalid input. Please choose between 1 - 6");
+                                break;
+                        }
                     }
-
+                    else
+                    {
+                        Console.WriteLine("Invalid input. Please enter a number between 1 - 6");
+                    }
                 }
                 while (!validDepartment);
+
 
                 Console.WriteLine("\n----------------");
                 
@@ -430,38 +477,38 @@ namespace C_sharp_Exam
             while (Console.ReadLine().ToUpper() == "Y");
         }
 
-        public bool CheckEmployeeIDExistence(int id)
-        {
-            string filePath = ConfigurationManager.AppSettings["FilePath"];
-            List<Employee> employeesList = new List<Employee>();
+        //public bool CheckEmployeeIDExistence(string id)
+        //{
+        //    string filePath = ConfigurationManager.AppSettings["FilePath"];
+        //    List<Employee> employeesList = new List<Employee>();
 
-            try
-            {
-                if (File.Exists(filePath) && new FileInfo(filePath).Length > 0)
-                {
-                    string jsonString = File.ReadAllText(filePath);
-                    employeesList = JsonConvert.DeserializeObject<List<Employee>>(jsonString);
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error reading file: {ex.Message}");
-            }
+        //    try
+        //    {
+        //        if (File.Exists(filePath) && new FileInfo(filePath).Length > 0)
+        //        {
+        //            string jsonString = File.ReadAllText(filePath);
+        //            employeesList = JsonConvert.DeserializeObject<List<Employee>>(jsonString);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"Error reading file: {ex.Message}");
+        //    }
 
-            bool isExist = employeesList.Any(x => x.employeeID == id);
+        //    bool isExist = employeesList.Any(x => x.employeeID == id);
 
-            if (isExist)
-            {
-                Console.WriteLine($"Employee ID {id} already exists in the file.");
-            }
+        //    if (isExist)
+        //    {
+        //        Console.WriteLine($"Employee ID {id} already exists in the file.");
+        //    }
 
-            return isExist;
-        }
+        //    return isExist;
+        //}
 
         public void DeleteEmployee()
         {
             Console.Write("Enter the ID of the employee to be deleted: ");
-            int id = Convert.ToInt32(Console.ReadLine());
+            string id = Console.ReadLine();
 
             string filePath = ConfigurationManager.AppSettings["FilePath"];
             List<Employee> employeesList = new List<Employee>();
